@@ -4,9 +4,8 @@ import {
   ColumnsDirective,
   ColumnDirective,
   Page,
-  ExcelExport,
-  PdfExport,
-  Edit,
+  Search,
+  Toolbar,
   Inject,
 } from "@syncfusion/ej2-react-grids";
 
@@ -16,21 +15,21 @@ import { Header } from "../components";
 const Employees = () => {
   return (
     <div className="m-2 md:m-10 p-2 md:p-10 bg-white  rounded-3xl">
-      AA
       <Header category="Page" title="Employees" />
-      AA
+
       <GridComponent
-        id="gridcomp"
         dataSource={employeesData}
         allowPaging
         allowSorting
+        toolbar={["Search"]}
+        width="auto"
       >
         <ColumnsDirective>
           {employeesGrid.map((item, index) => (
             <ColumnDirective key={index} {...item} />
           ))}
         </ColumnsDirective>
-        <Inject services={[Page, ExcelExport, Edit, PdfExport]} />
+        <Inject services={[Page, Search, Toolbar]} />
       </GridComponent>
     </div>
   );
