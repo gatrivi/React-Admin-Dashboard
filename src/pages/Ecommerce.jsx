@@ -17,7 +17,7 @@ const Ecommerce = () => {
           <div className="flex justify-between items-center">
             <div>
               <p className="font-bold text-gray-400">Ingresos</p>
-              <p className="text-2xl">US$2,857</p>
+              <p className="text-2xl text-gray-300 ">US$2,857</p>
             </div>
           </div>
           <div className="mt-6">
