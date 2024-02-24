@@ -1,13 +1,16 @@
- import React from 'react'
- import ReactDOM from 'react-dom'
- import './index.css'
- import App from './App'
- import {ContextProvider} from './context/ContextProvider'
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import { ContextProvider } from "./context/ContextProvider";
 
- ReactDOM.render(
- <ContextProvider >
- <App />
- </ContextProvider>
- , document.getElementById('root')
- 
- )
+//import { registerLicense } from "@syncfusion/ej2-base";
+
+//registerLicense(process.env.REACT_APP_SYNCFUSION_KEY);
+
+ReactDOM.render(
+  <ContextProvider>
+    <App />
+  </ContextProvider>,
+  document.getElementById("root")
+);
