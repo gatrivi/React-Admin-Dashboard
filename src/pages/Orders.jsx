@@ -14,7 +14,7 @@ import {
   Inject,
 } from "@syncfusion/ej2-react-grids";
 
-import { orderData, contextMenuItems, ordersGrid } from "../data/dummy";
+import { ordersData, contextMenuItems, ordersGrid } from "../data/dummy";
 import { Header } from "../components";
 
 const Orders = () => {
@@ -23,6 +23,13 @@ const Orders = () => {
       AA
       <Header category="Page" title="Orders" />
       AA
+      <GridComponent id="gridcomp" dataSource={ordersData}>
+        <ColumnsDirective>
+          {ordersGrid.map((item, index) => (
+            <ColumnDirective key={index} {...item} />
+          ))}
+        </ColumnsDirective>
+      </GridComponent>
     </div>
   );
 };
