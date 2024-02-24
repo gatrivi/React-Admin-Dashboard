@@ -3,10 +3,6 @@ import {
   GridComponent,
   ColumnsDirective,
   ColumnDirective,
-  Resize,
-  Sort,
-  ContextMenu,
-  Filter,
   Page,
   ExcelExport,
   PdfExport,
@@ -34,18 +30,7 @@ const Employees = () => {
             <ColumnDirective key={index} {...item} />
           ))}
         </ColumnsDirective>
-        <Inject
-          services={[
-            Resize,
-            Sort,
-            ContextMenu,
-            Filter,
-            Page,
-            ExcelExport,
-            Edit,
-            PdfExport,
-          ]}
-        />
+        <Inject services={[Page, ExcelExport, Edit, PdfExport]} />
       </GridComponent>
     </div>
   );
