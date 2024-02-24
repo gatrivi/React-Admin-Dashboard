@@ -3,5 +3,6 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "block",
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }

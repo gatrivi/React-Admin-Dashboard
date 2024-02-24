@@ -55,11 +55,11 @@ const Ecommerce = () => {
           ))}
         </div>
 
-        <div className="flex gap-10 flex-wrap border-2 justify-center">
-          <div className="bg-white dark:text-gray-200 border-2 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780">
+        <div className="flex gap-10 flex-wrap  justify-center">
+          <div className="bg-white dark:text-gray-200  dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780">
             <div className="flex justify-between">
               <p className="font-semibold text-xl">Revenue Updates</p>
-              <div className="flex items-center gap-4 border-2">
+              <div className="flex items-center gap-4 ">
                 <p className="flex items-center text-gray-600 hover:drop-shadow-lg ">
                   <span>
                     <GoDot />
@@ -102,7 +102,16 @@ const Ecommerce = () => {
                     color="blue"
                   />
                 </div>
+                <div className="mt-10 border-2">
+                  <Button
+                    color="white"
+                    bgColor="blue"
+                    text="download Report"
+                    borderRadius="10px"
+                  />
+                </div>
               </div>
+              <Stacked width="320px" height="360px" />{" "}
             </div>
           </div>
         </div>
