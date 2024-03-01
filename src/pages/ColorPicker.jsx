@@ -20,7 +20,8 @@ const ColorPicker = () => {
               mode="Palette"
               modeSwitcher={false}
               inline
-              showButton={false}
+              showButtons={false}
+              change={change}
             />
           </div>{" "}
           <div className="border-2">
@@ -30,7 +31,8 @@ const ColorPicker = () => {
               mode="Picker"
               modeSwitcher={false}
               inline
-              showButton={false}
+              showButtons={false}
+              change={change}
             />
           </div>
         </div>
