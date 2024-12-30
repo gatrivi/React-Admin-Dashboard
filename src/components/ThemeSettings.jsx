@@ -16,7 +16,7 @@ const ThemeSettings = () => {
           <p className="font-semibold text-xl">Settings</p>
           <button
             className="border-2 text-2xl p-3 hover:drop-shadow-x hover:bg-light-gray"
-            style={{ color: "rgb(153,171,180", borderRadius: "50%" }}
+            style={{ color: currentColor, borderRadius: "50%" }}
             type="button"
             onClick={() => setThemeSettings(false)}
           >
