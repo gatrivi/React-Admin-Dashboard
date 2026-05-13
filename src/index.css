@@ -1,12 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Inter", "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #F9FAFB;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Dark mode body background */
+.dark body {
+    background-color: #111827;
+}
+
+/* Touch-friendly defaults */
+button, a {
+    touch-action: manipulation;
+}
+
+/* Prevent text selection on UI elements */
+.select-none {
+    -webkit-user-select: none;
+    user-select: none;
+}

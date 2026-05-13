@@ -10,8 +10,8 @@ const ThemeSettings = () => {
     useStateContext();
 
   return (
-    <div className="bg-half-transparent w-screen fixed nav-item top-0 right-0">
-      <div className="float-right h-screen dark:text-gray-200 bg-white dark:bg-[#484B52] w-full md:w-400">
+    <div className="bg-half-transparent w-screen fixed nav-item top-0 right-0 transition-all duration-300">
+      <div className="float-right h-screen dark:text-gray-200 bg-white dark:bg-[#484B52] w-full md:w-400 transform transition-transform duration-300 ease-in-out shadow-2xl">
         <div className="flex justify-between items-center p-4 ml-4">
           <p className="font-semibold text-xl">Settings</p>
           <button

@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Refer to [GEMINI.md](./GEMINI.md) for project-specific mandates, including communication style and UX standards.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
