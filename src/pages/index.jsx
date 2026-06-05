@@ -5,6 +5,7 @@ export { default as Customers } from './Customers';
 export { default as CustomerDetail } from './CustomerDetail';
 export { default as Products } from './Products';
 export { default as More } from './More';
+export { default as AdminPage } from './AdminPage';
 
 // Enterprise / Secondary Pages
 export { default as Kanban } from './Kanban';

@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Navbar, Sidebar, BottomNav } from "./components";
+import { Navbar, Sidebar, BottomNav, LiveNotification } from "./components";
 
 import {
   Dashboard,
@@ -12,6 +12,7 @@ import {
   CustomerDetail,
   Products,
   More,
+  AdminPage,
   Kanban,
   Editor,
   Calendar,
@@ -65,6 +66,7 @@ const App = () => {
                 <Route path="/cliente/:id" element={<CustomerDetail />} />
                 <Route path="/productos" element={<Products />} />
                 <Route path="/mas" element={<More />} />
+                <Route path="/admin-trufi" element={<AdminPage />} />
 
                 {/* Herramientas Enterprise */}
                 <Route path="/kanban" element={<Kanban />} />
@@ -89,6 +91,7 @@ const App = () => {
 
           {/* Mobile Bottom Nav */}
           <BottomNav />
+          <LiveNotification />
         </div>
       </BrowserRouter>
     </div>

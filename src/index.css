@@ -28,3 +28,33 @@ button, a {
     -webkit-user-select: none;
     user-select: none;
 }
+
+@media print {
+  /* Hide all UI except the ticket */
+  body {
+    background: white !important;
+  }
+  .print\:hidden {
+    display: none !important;
+  }
+  #root > div > div {
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+  .fixed, .sidebar, .navbar, .bottom-nav {
+    display: none !important;
+  }
+  
+  /* Ticket simulation (thermal printer style) */
+  .receipt-container {
+    width: 80mm;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    color: black;
+  }
+  .receipt-dashed {
+    border-top: 1px dashed black;
+    margin: 8px 0;
+  }
+}

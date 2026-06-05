@@ -2,6 +2,7 @@ export { default as Button } from "./Button";
 export { default as ThemeSettings } from "./ThemeSettings";
 export { default as Sidebar } from "./Sidebar";
 export { default as Navbar } from "./Navbar";
+export { default as LiveNotification } from "./LiveNotification";
 export { default as Header } from "./Header";
 export { default as BottomNav } from "./BottomNav";
 export { default as StatusBadge } from "./StatusBadge";

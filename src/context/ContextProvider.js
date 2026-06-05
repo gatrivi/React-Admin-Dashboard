@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { React, createContext, useState } from "react";
 
+import { ordersData as initialOrders } from "../data/pymeData";
+
 const StateContext = createContext();
 
 export const initialState = {
@@ -12,11 +14,17 @@ export const initialState = {
 
 export const ContextProvider = ({ children }) => {
   const [activeMenu, setActiveMenu] = useState(true);
+  const [orders, setOrders] = useState(initialOrders);
   const [isClicked, setIsClicked] = useState(initialState);
   const [screenSize, setScreenSize] = useState(undefined);
   const [currentColor, setCurrentColor] = useState("#03C9D7");
   const [currentMode, setCurrentMode] = useState("Light");
   const [themeSettings, setThemeSettings] = useState(false);
+
+  const updateOrderStatus = (id, newStatus) => {
+    setOrders(prev => prev.map(o => o.id === id ? { ...o, status: newStatus } : o));
+  };
+
   const setMode = (e) => {
     console.log("setMode - ", e.target.value);
     setCurrentMode(e.target.value);
@@ -39,6 +47,9 @@ export const ContextProvider = ({ children }) => {
       value={{
         activeMenu,
         setActiveMenu,
+        orders,
+        setOrders,
+        updateOrderStatus,
         isClicked,
         setIsClicked,
         handleClick,
